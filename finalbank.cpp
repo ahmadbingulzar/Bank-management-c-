@@ -1,5 +1,5 @@
 /*This is a banking management system and create accountoldfile informatin of account ,make transactions,check details ,
-remove account ,view total accounts list */
+remove account ,view total accounts list of users */
 #include<iostream>
 #include<fstream>
 #include<stdio.h>
