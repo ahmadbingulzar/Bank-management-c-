@@ -1,0 +1,5 @@
+	204	3001254789654	ali	ahmad	gulzar	jan	2	2003	lahore	03366791001	pakistan
+	514	3110175936512	ali	NULL	ahmad	jan	20	2003	lahore	03366791001	pakistan
+	534	3110175936519	ali	NULL	ahmad	jan	20	2003	lahore	03366791001	paki
+	584	3110175936517	ali	NULL	ahmad	jan	20	2003	lahore	03366791001	pakistan
+	372	3110120000000	ali	ahmad	gulzar	may	24	2003	pindi	03366791001	pakistan
