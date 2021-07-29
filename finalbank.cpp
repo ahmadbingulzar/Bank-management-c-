@@ -9,38 +9,6 @@ remove account ,view total accounts list of users */
 #include<regex>
 #include<algorithm>
 using namespace std;
-int menu();
-
-int account_number_check(int account_number_generated)
-{
-       string middle_name,last_name,city,country,month, first_name, date, year ,mobile,cnic_old;
-    int account_number;
-    fstream bank_data;
-    bank_data.open("bankdata.txt",ios::in);
-    while(!bank_data.eof()){ 
- bank_data>>account_number>>cnic_old>>first_name>>middle_name>>last_name>>month>>date>>year>>city>>mobile>>country;
-     if(account_number==account_number_generated)
-    {
-        return true;
-    }
-    else false;
-}
-}
-int cnic_test(string cnic)
-{
-    string middle_name,last_name,city,country,month, first_name, date, year ,mobile,cnic_old;
-    int account_number;
-    fstream bank_data;
-    bank_data.open("bankdata.txt",ios::in);
-    while(!bank_data.eof()){ 
- bank_data>>account_number>>cnic_old>>first_name>>middle_name>>last_name>>month>>date>>year>>city>>mobile>>country;
-     if(cnic==cnic_old)
-    {
-        return true;
-    }
-    else false;
-}
-}
 //this funciton is used to view information of all the accounts
 void view_information()
 {
@@ -53,12 +21,7 @@ void view_information()
         cout<<file_read<<endl;
     }  
 }
-//this funtion is used to exit all the operations 
-int exit()
-{
-    cout<<"Thank you for using service"<<endl;
-    return 0;
-}
+
 //this function is used to view the information of a particular account
 int view_customer_detail()
 {
