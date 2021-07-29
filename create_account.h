@@ -1,4 +1,4 @@
-
+int menu();
 int account_number_check(int account_number_generated)
 {
        string middle_name,last_name,city,country,month, first_name, date, year ,mobile,cnic_old;
@@ -30,18 +30,6 @@ int cnic_test(string cnic)
     }
     else false;
 }
-}
-//this funciton is used to view information of all the accounts
-void view_information()
-{
-    string file_read;
-    ifstream read;
-    read.open("bankdata.txt",ios::in);
-    while(!read.eof())
-    {
-        getline(read,file_read);
-        cout<<file_read<<endl;
-    }  
 }
 //this function is used to create new account
 void  create_new_account()

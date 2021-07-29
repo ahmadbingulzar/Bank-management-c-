@@ -1,5 +1,9 @@
 #include"create_account.h"
-
+#include"update.h"
+#include"view_customer_detail.h"
+#include"view_information.h"
+#include"exit.h"
+#include"remove_account.h"
 
 /*this is the menu function it displays the menu for the bank management system to user to select
 any option*/
