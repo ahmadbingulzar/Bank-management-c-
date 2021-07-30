@@ -3,7 +3,7 @@
 int update_data()
 {
  
-  string account_to_update,account_number,cnic,first_name,middle_name,last_name,month,date,year,city,mobile,country;
+  string account_to_update,account_number,cnic,first_name,middle_name,last_name,month,date,year,city,mobile,country,choice;
   string array[12]={"jan","feb","mar","april","may","jun","july","aug","sep","oct","nov","dec"};
   string date_array[31]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31"};
   int i;

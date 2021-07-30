@@ -1,16 +1,16 @@
-
-
 //this function is used to delete the account of a particular customer
 int remove_account()
 {
     string account_to_remove,account_number,cnic,first_name,middle_name,last_name,month,date,year,city,mobile,country;
 
-    cout<<"Enter account number to remove :";
-    cin>>account_to_remove;
+    cout<<"Enter account number to remove or Press m for the main menu:";
+    while(cin>>account_to_remove){ 
+    if(account_to_remove=="m")
+    menu();
     if(is_valid_entry(account_to_remove))
     {
-        cout<<"NOt valid Entry"<<endl;
-        return 0;
+        cout<<"Not valid Entry enter again or Press m for main menu:";
+        continue;
     }
     ifstream bank_data;
     bank_data.open("bankdata.txt",ios::in);
@@ -21,10 +21,10 @@ int remove_account()
          
     while(!bank_data.eof())
     {
-        cout<<account_number<<endl;
         if(account_to_remove==account_number)
            { 
                cout<<"Account is deleted"<<endl;
+               flag=false;
            }
         else
        {  
@@ -32,10 +32,13 @@ int remove_account()
        }
      bank_data>>account_number>>cnic>>first_name>>middle_name>>last_name>>month>>date>>year>>city>>mobile>>country;       
     }
-    if(account_to_remove!=account_number)
-    cout<<"No match"<<endl;
+
+    if(account_to_remove!=account_number||flag==false){ 
+    cout<<"enter again or Press m for the main menu:";
+    }
     bank_data.close();
     temp.close();
     remove("bankdata.txt");
     rename("temp.txt","bankdata.txt");
+    }
 }
