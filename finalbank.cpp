@@ -4,11 +4,11 @@ remove account ,view total accounts list of users */
 #include <fstream>
 #include <stdio.h>
 #include <time.h>
-#include "../Final bank management/Actions/validations.h"
+#include "Actions/validations.h"
 #include <string>
 #include <regex>
 #include <algorithm>
-#include "../Final bank management/Actions/menu.h"
+#include "Actions/menu.h"
 using namespace std;
 //this is the main function of the program
 int main()

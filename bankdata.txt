@@ -1,5 +1,5 @@
 	6226	3110145896547	ali	ahmad	gulzar	jan	20	2003	lahore	03366791001	pakistan
-	3619	3669874747474	ali	NULL	ahmad	jan	20	2003	lahore	03366791001	pakistan
+	3619	3110175936521	ali	NULL	ahmad	jan	20	2003	lahore	03366791001	pakistan
 	4043	3110125478965	ali	NULL	ahmad	july	31	2000	lahore	03366791001	Pakistan
-	6225	3110145896547	ali	ahmad	gulzar	jan	20	2003	lahore	03366791001	pakistan
+	6225	3110145896547	null	ahmad	gulzar	jan	20	2003	lahore	03366791001	pakistan
 	7460	3110175936515	ali	NULL	ahmad	dec	31	2000	lahore	03366791001	Pakistan
