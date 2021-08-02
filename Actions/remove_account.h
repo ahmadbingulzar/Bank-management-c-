@@ -2,15 +2,15 @@
 int remove_account()
 {
     string account_to_remove, account_number, cnic, first_name, middle_name, last_name, month, date, year, city, mobile, country;
-
-    cout << "Enter account number to remove or Press m for the main menu:";
-    while (cin >> account_to_remove)
+    cin.ignore(256, '\n');
+    cout << "Enter account number to remove or Press m for the main menu (without spaces):";
+    while (getline(cin, account_to_remove))
     {
         if (account_to_remove == "m")
             menu();  
         if (is_valid_entry(account_to_remove))
         {
-            cout << "Not valid Entry enter again or Press m for main menu:";
+            cout << "Not valid Entry enter again or Press m for main menu (without spaces):";
             continue;
         }
         ifstream bank_data;
@@ -36,7 +36,7 @@ int remove_account()
 
         if (account_to_remove != account_number || flag == false)
         {
-            cout << "enter again or Press m for the main menu:";
+            cout << "enter again or Press m for the main menu (without spaces):";
         }
         bank_data.close();
         temp.close();
